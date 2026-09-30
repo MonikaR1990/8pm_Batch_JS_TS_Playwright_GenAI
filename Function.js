@@ -71,3 +71,16 @@ const sub = function(a, b) //anonymus function
 }
 
 console.log(sub(5, 2))
+
+
+function login()
+{
+    let username = "bala@gmail.com"  
+    let password = "bala@123"
+
+    console.log(username)
+    console.log(password)
+}
+
+console.log(username) //outside of the function can't be accessble
+

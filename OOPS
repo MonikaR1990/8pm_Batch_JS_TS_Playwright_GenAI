@@ -1,0 +1,126 @@
+//OOPS
+
+//class
+//object
+
+//inheritance
+//polymorphism
+//Abstraction
+//Encapsulation
+
+//let tea = 15
+
+//class is blueprint it have properities (varibles) and methods (function)
+
+class Hotel
+{
+    tea = 15
+    coffee = 20
+    menu = "Pongal"
+
+    displayRate()
+    {
+        console.log(this.tea)
+        console.log(this.coffee)  
+        console.log(this.menu) 
+    }
+    isFoodReady()
+    {
+        console.log("Food is Preparing")
+    }
+
+}
+
+//to access the properities and methods I have to create Object
+
+//how to create object?
+
+let waiter1 = new Hotel()
+console.log(waiter1.tea)
+console.log(waiter1.coffee)
+
+waiter1.displayRate()
+
+//this is a keyword which refers the current instance/object
+
+let waiter2 = new Hotel()
+console.log(waiter2.tea)
+console.log(waiter2.coffee)
+
+waiter2.displayRate()
+waiter2.displayRate()
+
+class Student
+{
+    //properities
+    name = "Bala"
+    age = 12
+    id = 101
+
+    constructor()   //default constructor
+    {
+
+    }
+
+    //methods
+    displayDetails()
+    {
+        console.log(this.name)
+        console.log(this.age)
+        console.log(this.id)
+    }
+
+}
+
+let s1 = new Student()
+console.log(s1.name)
+console.log(s1.age)
+
+s1.displayDetails()
+
+
+//s1 ==> object
+//new ==> keyword
+//Student() ==> constructor
+
+class Car
+{
+    //Properties
+    constructor(barnd, color, model, price) //parameterized constructor
+    {
+        this.barnd = barnd
+        this.color = color
+        this.model = model
+        this.price = price
+    }
+
+    //methods
+    start()
+    {
+        console.log("Car Started")
+    }
+    stop()
+    {
+        console.log("Car Stopped")
+    }
+    displayCarDetails()
+    {
+        console.log(this.barnd)
+        console.log(this.color)
+        console.log(this.model)
+        console.log(this.price)
+    }
+}
+
+let c1 = new Car("TATA", "White", "ZET8", 800000)
+c1.displayCarDetails()
+
+
+let c2 = new Car("BMW", "Balck", "BMW123", 500000)
+c2.displayCarDetails()
+c2.start()
+c2.stop()
+ 
+//constructor is a special method in a class that is automatically call when an object is created
+
+//initialize the object with required values
