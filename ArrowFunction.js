@@ -25,7 +25,7 @@ greet()
 //     console.log(message + " " + name)
 // }
 
-const greetings = name=>
+const greetings = (name)=>
 {
     let message = "Hello"
     console.log(message + " " + name)

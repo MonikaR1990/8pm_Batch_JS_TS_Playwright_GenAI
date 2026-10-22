@@ -126,3 +126,104 @@ const calculator = {
     }
 
 }
+
+//Array of Objects
+
+let teacher = [
+    {name: "Priya", subject: "Maths"},
+    {name: "Ram", subject: "English"},
+    {name: "Raj", subject: "Science"},
+]
+
+console.log(teacher[2].name)
+console.log(teacher[2].subject)
+
+let laptop = {
+    brand: "HP",
+    price: 42000,
+    ram: "4GB",
+    generation: 5
+}
+
+console.log(laptop.brand)
+console.log(laptop.price)
+
+//for...in loop
+
+for(let key in laptop)
+{
+    console.log(key)
+}
+
+
+for(let k in laptop)
+{
+    console.log(laptop[k])
+}
+
+//Object.freeze(laptop)
+
+// laptop.brand = "Dell"  //update
+// laptop.warranty = 2    //add
+// delete laptop.generation //
+
+
+console.log(laptop)
+
+Object.seal(laptop) //existing property can update
+
+laptop.brand = "Dell"  //update
+laptop.warranty = 2    //add
+delete laptop.generation //Delete
+
+console.log(laptop)
+
+//Destructuring
+
+let player = {
+    pname: "Sachin",
+    pnumber: 10,
+    prank: 1
+}
+
+console.log(player.pname)
+
+//Extracting the properties from the object and store them directly into variables
+
+// const {pname, pnumber, prank} = player
+
+// console.log(pname)
+// console.log(pnumber)
+// console.log(prank)
+
+const updatePlayer = {
+    ...player,     //spread operator 
+    city: "Mumbai",
+    isRetierd: true
+}
+
+console.log(updatePlayer)
+
+const { pname, pnumber, } = updatePlayer  //rest operator
+
+console.log(pname)
+console.log(pnumber)
+
+console.log(remaining)
+
+//Object.keys
+console.log(Object.keys(updatePlayer))
+
+//Object.values
+console.log(Object.values(updatePlayer))
+
+//Object.entries
+console.log(Object.entries(updatePlayer))
+
+
+//Object.assign
+let obj1 = { a: 1 }
+let obj2 = { b: 2 }
+
+let obj3 = Object.assign(obj1, obj2, { c: 3 })
+console.log(obj3)

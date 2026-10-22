@@ -6,6 +6,9 @@ function greet()     //function definition //function without parameter
     console.log("Hello Everyone")
 }
 
+
+
+
 greet()   //function call
 
 greet()
@@ -37,6 +40,7 @@ function sum(a, b)
 
 sum(6, 7)
 
+
 //void is just performs the action
 
 // const result = sum(5, 2)
@@ -52,6 +56,16 @@ console.log(sum(5, 3))
 const result = sum(5, 6) + 4  //8 return back the value
 console.log(result)
 
+
+function getName(name)     //function definition //function without parameter
+{
+    return name
+}
+
+getName("Monika")
+
+
+
 function salaryCalculation(basic, hra, allowance)
 {
     let salary = basic + hra + allowance
@@ -63,7 +77,7 @@ let updatedSalary = salaryCalculation(15000, 3000, 2000) + bonus
 console.log(updatedSalary)
 
 
-console.log(sub(5, 2))
+// console.log(sub(5, 2))
 
 const sub = function(a, b) //anonymus function
 {
@@ -82,5 +96,8 @@ function login()
     console.log(password)
 }
 
-console.log(username) //outside of the function can't be accessble
+//console.log(username) //outside of the function can't be accessble
 
+
+
+console.log(salaryCalculation(10000, 5000, 3000))
